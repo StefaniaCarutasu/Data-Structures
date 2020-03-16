@@ -10,6 +10,11 @@ struct stiva {
 
 void push(int x)
 {
+    if (pointer_global_element_varf == NULL)
+    {
+        pointer_global_element_varf->info = x;
+        pointer_global_element_varf->next = NULL;
+    }
     stiva* nod = new stiva;
     nod->info = x;
     nod->next = pointer_global_element_varf;
@@ -17,6 +22,8 @@ void push(int x)
 }
 void pop()
 {
+    if (pointer_global_element_varf == NULL)
+        return;
     stiva* nod = new stiva;
     nod = pointer_global_element_varf;
     pointer_global_element_varf = pointer_global_element_varf->next;
@@ -25,6 +32,7 @@ void pop()
 }
 int main()
 {
+    pointer_global_element_varf = NULL;
     push(1);
     pop();
     push(2);
