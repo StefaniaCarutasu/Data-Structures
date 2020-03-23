@@ -5,34 +5,28 @@ struct stiva {
     int info;
 
     stiva* next;
-
-} *pointer_global_element_varf;
-
+    
+}*varf;
 void push(int x)
 {
-    if (pointer_global_element_varf == NULL)
-    {
-        pointer_global_element_varf->info = x;
-        pointer_global_element_varf->next = NULL;
-    }
     stiva* nod = new stiva;
     nod->info = x;
-    nod->next = pointer_global_element_varf;
-    pointer_global_element_varf = nod;
+    nod->next = varf;
+    varf = nod;
+    cout << "Am adaugat: " << x << '\n';
 }
 void pop()
 {
-    if (pointer_global_element_varf == NULL)
-        return;
+    if (varf == NULL)
+        cout << "Stiva vida";
     stiva* nod = new stiva;
-    nod = pointer_global_element_varf;
-    pointer_global_element_varf = pointer_global_element_varf->next;
-    cout << nod->info;
+    nod = varf;
+    varf = varf->next;
+    cout <<"Am sters: " << nod->info << '\n';
     delete nod;
 }
 int main()
 {
-    pointer_global_element_varf = NULL;
     push(1);
     pop();
     push(2);

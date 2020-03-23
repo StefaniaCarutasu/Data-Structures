@@ -6,7 +6,9 @@ struct coordonate
 {
 	int i, j;
 }v[100], coada[100];
+
 int k=-1, M[100][100];
+
 void push(int i,int j, coordonate coada[])
 {
 	k++;
@@ -64,7 +66,7 @@ int main()
 						push(c1, c2+1, coada);
 						M[c1][c2+1] = c;
 					}
-					if (c1 < m && c1 >= 0 && c2-1 < m && c2-1 >= 0 && M[c1 + 1][c2-1] == 1) //stanga
+					if (c1 < m && c1 >= 0 && c2-1 < m && c2-1 >= 0 && M[c1][c2-1] == 1) //stanga
 					{
 						push(c1, c2-1, coada);
 						M[c1][c2-1] = c;

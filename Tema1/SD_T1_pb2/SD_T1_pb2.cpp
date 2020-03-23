@@ -23,7 +23,7 @@ void push_left(int x)
         last = nod;
     }
     first = nod;
-    
+    cout << "Am inserat la stanga: " << x << '\n';
 
 }
 void push_right(int x)
@@ -43,55 +43,46 @@ void push_right(int x)
         nod->prev = last;
         last = nod;
     }
+    cout << "Am inserat la dreapta: " << x << '\n';
 }
 void pop_left()
 {
     if (first == NULL)
-        return;
+        cout << "Coada vida'\n'";
     else 
     {
         if (first->next == NULL)
         {
-            cout << first->info << '\n';
+            cout <<"Am sters de la stanga: " << first->info << '\n';
             delete first;
         }
         else
         {
             coada* nod = new coada;
             nod = first;
-            cout << nod->info << '\n';
+            cout << "Am sters de la stanga: " << nod->info << '\n';
             first = first->next;
             first->prev = NULL;
             delete nod;
         }
     }
+
 }
 void pop_right()
 {   
     if (last == NULL)
-        return;
+        cout << "Coada vida'\n'";
     else
     {
-        if (last->prev == NULL)
-        {
-            cout << last->info << '\n';
-            delete last;
-        }
-        else
-        {
             coada* nod = new coada;
             nod = last;
-            cout << nod->info << '\n';
+            cout <<  "Am sters de la dreapta: " << nod->info << '\n';
             last = last->prev;
             last->next = NULL;
-            delete nod;
-        }
     }
-    
 }
 int main()
 {
-    first = last = NULL;
     push_left(1);
     push_right(2);
     pop_right();
