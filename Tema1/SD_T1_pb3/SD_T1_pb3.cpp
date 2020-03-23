@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-	int st_tarusi[10], n, tos=-1, x;
+	int st_tarusi[50], n, tos = -1, x;
 	cin >> n;
 	for (int i = 0; i < n; i++)
 	{
@@ -16,10 +16,16 @@ int main()
 		{
 			if (st_tarusi[tos] == x)
 				tos--;
+			else
+			{
+				tos++;
+				st_tarusi[tos] = x;
+			}
 		}
 	}
 	if (tos == -1)
 		cout << "Valid";
 	else cout << "Invalid";
+
 	return 0;
 }
