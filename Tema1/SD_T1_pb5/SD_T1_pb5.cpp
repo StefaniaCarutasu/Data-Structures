@@ -1,38 +1,37 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-int w[500];
-
+void citire(int& n, int v[])
+{
+	cout << "Introduceti lungimea vectorului: ";
+	cin >> n;
+	cout << "Introduceti elementele vectorului: ";
+	for (int i = 0; i < n; i++)
+		cin >> v[i];
+}
 int main()
 {
-	int n, i, v[100];
-	cin >> n;
-
-	for (i = 0; i < n; i++)
-		cin >> v[i];
-
-	int max = v[0];
-
-	for (i = 1; i < n; i++)
-		if (v[i] > max) max = v[i];
-
-	for (i = 0; i < n; i++)
-		w[v[i]]++;
-
-	bool ok = false;
-	i = 0;
-
-	while (ok == false && i <= max)
+	int n, v[100], nr, aparitii = 1;
+	citire(n, v);
+	nr = v[0];
+	for (int i = 1; i < n; i++)
 	{
-		if (w[i] >= n / 2 + 1)
+		if (v[i] == nr)
+			aparitii++;
+		else aparitii--;
+		if (aparitii < 0)
 		{
-			ok = true; break;
+			nr = v[i];
+			aparitii = 1;
 		}
-		i++;
 	}
-
-	if (ok)
-		cout << i;
-	else
-		cout << "Nu exista un astfel de element";
+	aparitii = 0;
+	for (int i = 0; i < n; i++)
+		if (v[i] == nr)
+			aparitii++;
+	if (aparitii > n / 2)
+		cout << "Numarul majoritar este: " << nr;
+	else cout << "Nu exista element majoritar.";
+	delete[] v;
 	return 0;
+
 }
