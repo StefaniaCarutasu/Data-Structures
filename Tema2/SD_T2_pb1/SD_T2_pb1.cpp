@@ -1,7 +1,5 @@
 #include<iostream>
 using namespace std;
-int n = 100;
-
 void repozitionareS(int index, int dimensiune, int h[])
 {
 	int fiu_stg, fiu_dr, min;
@@ -56,7 +54,7 @@ void mutareI(int index, int dimensiune, int h[])
 		}
 	}
 }
-void inserare(int valoare, int dimensiune, int h[])
+void inserare(int valoare, int dimensiune, int h[], int n)
 {
 	if (dimensiune == n)
 		cout << "Overflow";
@@ -68,7 +66,30 @@ void inserare(int valoare, int dimensiune, int h[])
 	}
 }
 
+
+void citire(int &n, int v[])
+{
+	cout << "Introduceti lungimea vectorului: ";
+	cin >> n;
+	cout << '\n' << "Introduceti cele " << n << " numere: ";
+	for (int i = 0; i < n; i++)
+	{
+		int x;
+		cin >> x;
+		inserare(x, i, v, n);
+	}
+}
+void afisare(int n, int v[])
+{
+	for (int i = 0; i < n; i++)
+	{
+		cout << v[i] << " ";
+	}
+}
 int main()
 {
+	int v[100], n;
+	citire(n, v);
+	afisare(n, v);
 	return 0;
 }
