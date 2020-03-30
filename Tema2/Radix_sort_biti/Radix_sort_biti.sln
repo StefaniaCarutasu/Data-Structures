@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Radix_sort_biti", "Radix_sort_biti.vcxproj", "{A39521AB-C14C-4C3B-9B74-78682BD196AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A39521AB-C14C-4C3B-9B74-78682BD196AD}.Debug|x64.ActiveCfg = Debug|x64
+		{A39521AB-C14C-4C3B-9B74-78682BD196AD}.Debug|x64.Build.0 = Debug|x64
+		{A39521AB-C14C-4C3B-9B74-78682BD196AD}.Debug|x86.ActiveCfg = Debug|Win32
+		{A39521AB-C14C-4C3B-9B74-78682BD196AD}.Debug|x86.Build.0 = Debug|Win32
+		{A39521AB-C14C-4C3B-9B74-78682BD196AD}.Release|x64.ActiveCfg = Release|x64
+		{A39521AB-C14C-4C3B-9B74-78682BD196AD}.Release|x64.Build.0 = Release|x64
+		{A39521AB-C14C-4C3B-9B74-78682BD196AD}.Release|x86.ActiveCfg = Release|Win32
+		{A39521AB-C14C-4C3B-9B74-78682BD196AD}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {194C6A3E-2B48-4100-BDD1-CE3C65CB2AD8}
+	EndGlobalSection
+EndGlobal

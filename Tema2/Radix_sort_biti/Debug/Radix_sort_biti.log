@@ -1,0 +1,6 @@
+﻿  Radix_sort_biti.cpp
+C:\Users\STEFANIA\Desktop\Facultate\Structuri-de-date\Tema2\Radix_sort_biti\Radix_sort_biti.cpp(22,17): warning C4018: '<': signed/unsigned mismatch
+C:\Users\STEFANIA\Desktop\Facultate\Structuri-de-date\Tema2\Radix_sort_biti\Radix_sort_biti.cpp(34,17): warning C4018: '<': signed/unsigned mismatch
+C:\Users\STEFANIA\Desktop\Facultate\Structuri-de-date\Tema2\Radix_sort_biti\Radix_sort_biti.cpp(73,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\STEFANIA\Desktop\Facultate\Structuri-de-date\Tema2\Radix_sort_biti\Radix_sort_biti.cpp(80,6): warning C4101: 'x': unreferenced local variable
+  Radix_sort_biti.vcxproj -> C:\Users\STEFANIA\Desktop\Facultate\Structuri-de-date\Tema2\Radix_sort_biti\Debug\Radix_sort_biti.exe
