@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-void citire(int &n, vector<int> v)
+void citire(int &n, vector<int>& v)
 {
     cout << "Introduceti lungimea vectorului: ";
     cin >> n;
@@ -14,14 +14,14 @@ void citire(int &n, vector<int> v)
     }
 }
 
-int mediana(vector<int> v)
+int mediana(vector<int>& v)
 {
     if (v.size() % 2 == 0)
         return (v[v.size() / 2] + v[v.size() / 2 - 1]) / 2;
     else return v[v.size() / 2];
 }
 
-int medianaVect(vector<int> v1, vector<int> v2)
+int medianaVect(vector<int>& v1, vector<int>& v2)
 {
     if (v1.size() <= 2)
     {
