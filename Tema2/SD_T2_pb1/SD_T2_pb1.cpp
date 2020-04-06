@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 void repozitionareS(int index, int dimensiune, int h[])
 {
 	int fiu_stg, fiu_dr, min;

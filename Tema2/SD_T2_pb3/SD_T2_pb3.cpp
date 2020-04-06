@@ -29,15 +29,16 @@ void countSort(int n, int v[])
 
 void citire(int &n, int v[])
 {
-	cout << "Introduceti numarul de numere";
+	cout << "Introduceti numarul de numere: ";
 	cin >> n;
+	cout << "Introducetei cele " << n << " numere: ";
 	for (int i = 0; i < n; i++)
 		cin >> v[i];
 }
 void afisare(int n, int v[])
 {
 	for (int i = 0; i < n; i++)
-		cout << v[i];
+		cout << v[i]<<" ";
 }
 int main()
 {
