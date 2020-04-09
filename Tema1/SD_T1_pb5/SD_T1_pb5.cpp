@@ -28,10 +28,10 @@ int main()
 	for (int i = 0; i < n; i++)
 		if (v[i] == nr)
 			aparitii++;
-	if (aparitii > n / 2)
+	if (aparitii >= n/2)
 		cout << "Numarul majoritar este: " << nr;
 	else cout << "Nu exista element majoritar.";
-	delete[] v;
+
 	return 0;
 
 }
