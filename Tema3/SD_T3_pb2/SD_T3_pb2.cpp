@@ -61,6 +61,7 @@ int main()
         else insert(radacina, c);
     }
     SDR(radacina);
+    cout << "\n";
     RSD(radacina);
     return 0;
 }

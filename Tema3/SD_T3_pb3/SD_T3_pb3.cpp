@@ -66,11 +66,13 @@ int main()
     cin >> k2;
     if (k1 > k2)
         swap(k1, k2);
-    cout << "Intervalul de cautare este (" << k1 << ", " << k2 << ")";
+    cout << "Intervalul de cautare este (" << k1 << ", " << k2 << ")\n";
     k1++;
+    cout << "Numerele din intervalul introdus sunt: ";
     while (k1 < k2)
     {
-        cautare(k1);
+        if(cautare(k1))
+            cout<<k1<<" ";
         k1++;
     }
     return 0;

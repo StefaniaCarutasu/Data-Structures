@@ -123,9 +123,14 @@ int main()
     cout << "Introduceti un numar pentru a fi cautat: ";
     cin >> x;
     cout << cautare(x) << '\n';
+    cout << "Introduceti un numar pentru a fi cautat: ";
+    cin >> x;
+    cout << cautare(x) << '\n';
     cout << "Introduceti un numar pentru a fi sters: ";
     cin >> x;
     stergere(radacina,x);
     SDR(radacina);
+    cout << '\n';
+    RSD(radacina);
     return 0;
 }
